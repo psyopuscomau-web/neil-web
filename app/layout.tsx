@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
+import Nav from "./Nav";
 
 const barlowCondensed = Barlow_Condensed({
   subsets: ["latin"],
@@ -27,7 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${barlowCondensed.variable} ${libreBaskerville.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
