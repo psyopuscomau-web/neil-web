@@ -39,3 +39,53 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Original uncompressed assets — keep on disk, don't deploy
+public/2017 Website/
+public/Advertising/
+public/Building Backyard Boats/
+public/Daphne and Apollo/
+public/Making of Backyard Boats/
+public/Two Faces of Adam and Eve/
+*.wav
+# Untracked originals in CD image folders
+public/Building Backyard Boats CD Images/CD*
+public/Building Backyard Boats CD Images/Inside*
+public/Building Backyard Boats CD Images/Page*
+public/Daphne and Apollo CD Images/Daphne*
+public/Daphne and Apollo CD Images/Inside*
+public/Daphne and Apollo CD Images/Lyrics*
+public/Two Faces of Adam and Eve CD Images/CD*
+public/Two Faces of Adam and Eve CD Images/Lyric*
+# Untracked originals in Neil Preston Images era folders
+public/Neil Preston Images/Daphne Apollo Era/Monday Psalter 2.JPG
+public/Neil Preston Images/Daphne Apollo Era/Neil Preston promoshot.JPG
+public/Neil Preston Images/Building Backyard Boats Era/IMGP*
+public/Neil Preston Images/Building Backyard Boats Era/IMG_*
+public/Neil Preston Images/Building Backyard Boats Era/2008*
+public/Neil Preston Images/Building Backyard Boats Era/Gigs*
+public/Neil Preston Images/Building Backyard Boats Era/Doboro*
+public/Neil Preston Images/Building Backyard Boats Era/P1000*
+public/Neil Preston Images/Building Backyard Boats Era/PB*
+public/Neil Preston Images/Building Backyard Boats Era/Preston*
+public/Neil Preston Images/Building Backyard Boats Era/Screenshot*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/3[0-9]*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/IMG_0117*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/IMG_0118*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/IMG_0123*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/IMG_0124*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/IMG_085*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/IMG_086*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/IMG_1*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/IMG_2*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/IMG_6*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/P1000*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/Neil 1.jpg
+public/Neil Preston Images/Two Faces of Adam and Eve Era/Neil Sitting 2*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/Neil Sitting with*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/Neil Preston solo*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/Neil Preston with*
+public/Neil Preston Images/Two Faces of Adam and Eve Era/Mojo gig - 2*
+public/Making of Backyard Boats/IMGP*
+public/Making of Backyard Boats/Monday Psalter 2.JPG
+public/Making of Backyard Boats/The Oats*
