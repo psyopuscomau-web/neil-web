@@ -3,13 +3,13 @@
 export default function Nav() {
   return (
     <nav
-      className="fixed top-0 left-0 right-0 bg-black flex items-center justify-between"
-      style={{ padding: '0 80px', height: '72px', zIndex: 9999 }}
+      className="fixed top-0 left-0 right-0 bg-black flex items-center justify-between px-5 md:px-20"
+      style={{ height: '72px', zIndex: 9999 }}
     >
       <a
         href="/"
-        className="font-display font-black uppercase tracking-wide"
-        style={{ fontSize: '2.2rem', cursor: 'pointer', textDecoration: 'none', color: 'white' }}
+        className="font-display font-black uppercase tracking-wide text-xl md:text-[2.2rem]"
+        style={{ cursor: 'pointer', textDecoration: 'none', color: 'white' }}
       >
         Neil Preston Music
       </a>
