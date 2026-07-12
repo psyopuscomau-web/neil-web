@@ -21,6 +21,9 @@ export default function VideoPlayer({ videos }: { videos: Video[] }) {
           videoId: video.id,
           playerVars: { rel: 0, modestbranding: 1, cc_load_policy: 0 },
           events: {
+            onReady: (e: any) => {
+              e.target.unloadModule('captions')
+            },
             onStateChange: (e: any) => {
               if (e.data === window.YT.PlayerState.PLAYING) {
                 players.current.forEach((p, j) => {
