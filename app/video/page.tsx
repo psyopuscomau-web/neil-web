@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import SmokeOverlay from '../SmokeOverlay'
 
 const photos = [
   { src: '/Neil Preston Images/Building Backyard Boats Era/20080731_APL0093.jpg', pos: 'top' },
@@ -23,6 +24,7 @@ export default function VideoPage() {
             </div>
           ))}
         </div>
+        <SmokeOverlay />
         <div
           className="absolute bottom-0 right-0 flex flex-col items-end gap-3"
           style={{ padding: '0 3% 2.5% 0', zIndex: 10 }}

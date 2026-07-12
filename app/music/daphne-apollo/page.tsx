@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import EraNav from '../EraNav'
+import SmokeOverlay from '../../SmokeOverlay'
 
 const photos = [
   { src: '/Neil Preston Images/Daphne Apollo Era/d217726bm.JPG', pos: 'top' },
@@ -24,6 +25,7 @@ export default function DaphneApolloPage() {
             </div>
           ))}
         </div>
+        <SmokeOverlay />
         <EraNav current="/music/daphne-apollo" />
       </section>
     </main>

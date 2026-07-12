@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import SmokeOverlay from '../SmokeOverlay'
 
 const overviewPhotos = [
   '/Neil Preston Images/Two Faces of Adam and Eve Era/IMG_0116.jpg',
@@ -31,6 +32,7 @@ export default function MusicPage() {
           ))}
         </div>
         <div className="absolute inset-0 bg-black/30 pointer-events-none" />
+        <SmokeOverlay />
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <h1 className="font-display font-black uppercase text-white leading-none text-center"
             style={{ fontSize: 'clamp(4rem, 13vw, 14rem)' }}>Neil Preston</h1>

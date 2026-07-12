@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import EraNav from '../EraNav'
+import SmokeOverlay from '../../SmokeOverlay'
 
 const photos = [
   { src: '/Neil Preston Images/Two Faces of Adam and Eve Era/IMG_0116.jpg', pos: 'top' },
@@ -24,6 +25,7 @@ export default function TwoFacesPage() {
             </div>
           ))}
         </div>
+        <SmokeOverlay />
         <EraNav current="/music/two-faces" />
       </section>
     </main>

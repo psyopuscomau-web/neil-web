@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import EraNav from '../EraNav'
+import SmokeOverlay from '../../SmokeOverlay'
 
 const photos = [
   { src: '/Neil Preston Images/Building Backyard Boats Era/Neil Preston promo with Les Paul 3.jpg', pos: 'top' },
@@ -24,6 +25,7 @@ export default function BuildingBackyardBoatsPage() {
             </div>
           ))}
         </div>
+        <SmokeOverlay />
         <EraNav current="/music/building-backyard-boats" />
       </section>
     </main>
