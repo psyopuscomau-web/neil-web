@@ -15,7 +15,7 @@ export default function NavLinks() {
       </span>
       <span className="font-display font-bold uppercase tracking-widest" style={{ fontSize: '1.3rem' }}>
         <span className="text-np-red">Music </span>
-        <a href="#video" className="text-np-red hover:text-white transition-colors duration-200">Video</a>
+        <a href="/video" className="text-np-red hover:text-white transition-colors duration-200">Video</a>
       </span>
     </>
   )
