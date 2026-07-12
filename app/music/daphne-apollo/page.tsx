@@ -25,6 +25,7 @@ export default function DaphneApolloPage() {
             </div>
           ))}
         </div>
+        <div className="absolute inset-0 bg-black/30 pointer-events-none" />
         <SmokeOverlay />
         <EraNav current="/music/daphne-apollo" />
       </section>
