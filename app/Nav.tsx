@@ -15,7 +15,7 @@ export default function Nav() {
       </a>
       <span className="font-display font-bold uppercase tracking-widest" style={{ fontSize: '1.3rem' }}>
         <a href="/music" style={{ color: '#CC1100', cursor: 'pointer' }}>Music </a>
-        <a href="#video" style={{ color: '#CC1100', cursor: 'pointer' }}>Video</a>
+        <a href="/video" style={{ color: '#CC1100', cursor: 'pointer' }}>Video</a>
       </span>
     </nav>
   )
