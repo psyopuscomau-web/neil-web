@@ -19,7 +19,7 @@ export default function VideoPlayer({ videos }: { videos: Video[] }) {
       players.current = videos.map((video, i) =>
         new window.YT.Player(`yt-${video.id}`, {
           videoId: video.id,
-          playerVars: { rel: 0, modestbranding: 1 },
+          playerVars: { rel: 0, modestbranding: 1, cc_load_policy: 0 },
           events: {
             onStateChange: (e: any) => {
               if (e.data === window.YT.PlayerState.PLAYING) {
