@@ -27,6 +27,8 @@ export default function VideoPlayer({ videos }: { videos: Video[] }) {
             },
             onStateChange: (e: any) => {
               if (e.data === window.YT.PlayerState.PLAYING) {
+                e.target.setOption('captions', 'track', {})
+                e.target.unloadModule('captions')
                 players.current.forEach((p, j) => {
                   if (j !== i && p?.pauseVideo) p.pauseVideo()
                 })
