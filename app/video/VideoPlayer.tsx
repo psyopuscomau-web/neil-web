@@ -22,6 +22,7 @@ export default function VideoPlayer({ videos }: { videos: Video[] }) {
           playerVars: { rel: 0, modestbranding: 1, cc_load_policy: 0 },
           events: {
             onReady: (e: any) => {
+              e.target.setOption('captions', 'track', {})
               e.target.unloadModule('captions')
             },
             onStateChange: (e: any) => {
