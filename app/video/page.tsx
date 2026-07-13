@@ -3,12 +3,12 @@ import SmokeOverlay from '../SmokeOverlay'
 import VideoPlayer from './VideoPlayer'
 
 const photos = [
-  { src: '/Neil Preston Images/Building Backyard Boats Era/20080731_APL0093.jpg', pos: 'top' },
-  { src: '/Neil Preston Images/Building Backyard Boats Era/20080731_APL0302.jpg', pos: 'top' },
-  { src: '/Neil Preston Images/Building Backyard Boats Era/Dobro Neil Preston.jpg', pos: 'top' },
-  { src: '/Neil Preston Images/Two Faces of Adam and Eve Era/Neil Sitting with Hat 1.jpg', pos: 'top' },
-  { src: '/Neil Preston Images/Building Backyard Boats Era/PB240239.JPG', pos: 'top' },
-  { src: '/Neil Preston Images/Building Backyard Boats Era/Screenshot 2026-07-09 162846.png', pos: 'center' },
+  { src: '/Neil Preston Images/Building Backyard Boats Era/20080731_APL0093.jpg', pos: 'top', transform: undefined },
+  { src: '/Neil Preston Images/Building Backyard Boats Era/IMGP1421.JPG', pos: 'center', transform: 'translateY(30%) rotate(90deg) scale(1.3)' },
+  { src: '/Neil Preston Images/Building Backyard Boats Era/Dobro Neil Preston.jpg', pos: 'top', transform: undefined },
+  { src: '/Neil Preston Images/Two Faces of Adam and Eve Era/Neil Sitting with Hat 1.jpg', pos: 'top', transform: undefined },
+  { src: '/Neil Preston Images/Building Backyard Boats Era/PB240239.JPG', pos: 'top', transform: undefined },
+  { src: '/Neil Preston Images/Building Backyard Boats Era/Screenshot 2026-07-09 162846.png', pos: 'center', transform: undefined },
 ]
 
 const filter = 'brightness(0.3) sepia(1) saturate(3) hue-rotate(325deg) blur(1.5px)'
@@ -44,7 +44,7 @@ export default function VideoPage() {
           {photos.map((photo, i) => (
             <div key={i} className="relative overflow-hidden">
               <Image src={photo.src} alt="Neil Preston" fill className="object-cover"
-                style={{ filter, objectPosition: photo.pos }} sizes="34vw" />
+                style={{ filter, objectPosition: photo.pos, transform: photo.transform }} sizes="34vw" />
             </div>
           ))}
         </div>
