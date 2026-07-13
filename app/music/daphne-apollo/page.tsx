@@ -92,6 +92,9 @@ export default function DaphneApolloPage() {
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '1em' }}>
               Close intimate vocals, warm acoustic guitars and steel sounding dobro's – it captured a time and space; just how all good albums should.
             </p>
+            <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '1em' }}>
+              "This tale is true an ancient tale - as it is today of how love prevails ..."
+            </p>
           </div>
 
         </div>
