@@ -40,10 +40,10 @@ export default function SmokeOverlay() {
         x: Math.random() * W,
         y: startY ?? H + 10,
         vx: (Math.random() - 0.5) * 0.5,
-        vy: -(Math.random() * 0.45 + 0.12),
+        vy: -(Math.random() * 0.6 + 0.25),
         r: Math.random() * 40 + 20,
         alpha: Math.random() * 0.22 + 0.1,
-        decay: Math.random() * 0.001 + 0.0004,
+        decay: Math.random() * 0.0006 + 0.0002,
         grow: Math.random() * 0.35 + 0.1,
       })
     }
@@ -72,8 +72,8 @@ export default function SmokeOverlay() {
           continue
         }
 
-        // Fade to nothing in the top 35% so smoke never reaches the first row
-        const yFade = Math.max(0, Math.min(1, (p.y - H * 0.1) / (H * 0.25)))
+        // Fade to nothing only in the top 8%
+        const yFade = Math.max(0, Math.min(1, (p.y - H * 0.02) / (H * 0.06)))
         const drawAlpha = p.alpha * yFade
         if (drawAlpha <= 0) continue
 
