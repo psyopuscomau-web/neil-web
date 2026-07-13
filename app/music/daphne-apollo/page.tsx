@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import EraNav from '../EraNav'
 import SmokeOverlay from '../../SmokeOverlay'
-import FeaturedTrack from './FeaturedTrack'
+import FeaturedTrack from '../FeaturedTrack'
 
 const photos = [
   { src: '/Neil Preston Images/Daphne Apollo Era/d217726bm.JPG', pos: 'top' },
@@ -54,7 +54,7 @@ export default function DaphneApolloPage() {
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '2vw', padding: '2vw' }}>
             <FeaturedTrack
               title="For the Love of Thee"
-              src="/Daphne%20and%20Apollo/Unknown%20artist/Unknown%20album%20(29-Dec-16%202-04-45%20PM)/For%20the%20Love%20of%20Thee.wav"
+              src="/audio/daphne-apollo/For the Love of Thee.mp3"
             />
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#CC1100', fontSize: 'clamp(1rem, 1.6vw, 1.6rem)', letterSpacing: '0.2em', textTransform: 'uppercase' }}>
