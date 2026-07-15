@@ -34,27 +34,30 @@ export default function MusicPage() {
         <div className="absolute inset-0 bg-black/30 pointer-events-none" />
         <SmokeOverlay />
 
-        {/* ── PHONE ONLY (< 640px): title above, album links below ── */}
-        <div className="sm:hidden absolute inset-0 flex flex-col items-center justify-center"
+        {/* ── PHONE ONLY: title centered ── */}
+        <div className="sm:hidden absolute inset-0 flex items-center justify-center pointer-events-none"
           style={{ zIndex: 10, paddingTop: '72px' }}>
           <h1 className="font-display font-black uppercase text-white leading-none text-center"
-            style={{ fontSize: 'clamp(3rem, 13vw, 4.5rem)', marginBottom: '2rem' }}>
+            style={{ fontSize: 'clamp(3rem, 13vw, 4.5rem)' }}>
             Neil Preston
           </h1>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.1rem' }}>
-            <a href="/music/daphne-apollo" className="font-display font-bold uppercase tracking-widest"
-              style={{ color: '#CC1100', cursor: 'pointer', fontSize: '1.05rem', letterSpacing: '0.05em', lineHeight: 1.2 }}>
-              Daphne and Apollo
-            </a>
-            <a href="/music/building-backyard-boats" className="font-display font-bold uppercase tracking-widest"
-              style={{ color: '#CC1100', cursor: 'pointer', fontSize: '1.05rem', letterSpacing: '0.05em', lineHeight: 1.2 }}>
-              Building Backyard Boats
-            </a>
-            <a href="/music/two-faces" className="font-display font-bold uppercase tracking-widest"
-              style={{ color: '#CC1100', cursor: 'pointer', fontSize: '1.05rem', letterSpacing: '0.05em', lineHeight: 1.2 }}>
-              Two Faces of Adam and Eve
-            </a>
-          </div>
+        </div>
+
+        {/* ── PHONE ONLY: album links right-justified at ~75% down ── */}
+        <div className="sm:hidden absolute flex flex-col items-end"
+          style={{ zIndex: 10, right: '5%', top: '73%', gap: '1rem', textAlign: 'right' }}>
+          <a href="/music/daphne-apollo" className="font-display font-bold uppercase tracking-widest"
+            style={{ color: '#CC1100', cursor: 'pointer', fontSize: '1.05rem', letterSpacing: '0.05em', lineHeight: 1.2 }}>
+            Daphne and Apollo
+          </a>
+          <a href="/music/building-backyard-boats" className="font-display font-bold uppercase tracking-widest"
+            style={{ color: '#CC1100', cursor: 'pointer', fontSize: '1.05rem', letterSpacing: '0.05em', lineHeight: 1.2 }}>
+            Building Backyard Boats
+          </a>
+          <a href="/music/two-faces" className="font-display font-bold uppercase tracking-widest"
+            style={{ color: '#CC1100', cursor: 'pointer', fontSize: '1.05rem', letterSpacing: '0.05em', lineHeight: 1.2 }}>
+            Two Faces of Adam and Eve
+          </a>
         </div>
 
         {/* ── DESKTOP / TABLET (≥ 640px): original layout ── */}
