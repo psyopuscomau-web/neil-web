@@ -31,6 +31,17 @@ a {
   text-decoration: none;
 }
 
+/* ── Music page title: smaller at tablet (640–1279px) to avoid clashing with album links ── */
+.music-page-title {
+  font-size: clamp(3rem, 6.5vw, 5.5rem);
+}
+
+@media (min-width: 1280px) {
+  .music-page-title {
+    font-size: clamp(4rem, 13vw, 14rem) !important;
+  }
+}
+
 /* ── Phone-only overrides (< 640px) ── */
 @media (max-width: 639px) {
   .video-item {

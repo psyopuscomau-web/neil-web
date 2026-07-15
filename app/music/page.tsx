@@ -62,8 +62,9 @@ export default function MusicPage() {
 
         {/* ── DESKTOP / TABLET (≥ 640px): original layout ── */}
         <div className="hidden sm:flex absolute inset-0 items-center justify-center pointer-events-none">
-          <h1 className="font-display font-black uppercase text-white leading-none text-center"
-            style={{ fontSize: 'clamp(4rem, 13vw, 14rem)' }}>Neil Preston</h1>
+          <h1 className="font-display font-black uppercase text-white leading-none text-center music-page-title">
+            Neil Preston
+          </h1>
         </div>
         <div className="hidden sm:flex absolute flex-col justify-center gap-8"
           style={{ right: '3%', top: '52%', transform: 'translateY(-50%)', zIndex: 10, textAlign: 'right' }}>
