@@ -3,7 +3,7 @@
 export default function Nav() {
   return (
     <nav
-      className="fixed top-0 left-0 right-0 bg-black flex items-center justify-between px-8 md:px-20"
+      className="fixed top-0 left-0 right-0 bg-black flex items-center justify-between px-12 md:px-20"
       style={{ height: '72px', zIndex: 9999 }}
     >
       <a
