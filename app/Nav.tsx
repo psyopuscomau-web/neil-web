@@ -8,7 +8,7 @@ export default function Nav() {
     >
       <a
         href="/"
-        className="font-display font-black uppercase tracking-wide text-xl md:text-[2.2rem]"
+        className="font-display font-black uppercase tracking-wide text-[1.3rem] xl:text-[2.2rem]"
         style={{ cursor: 'pointer', textDecoration: 'none', color: 'white' }}
       >
         Neil Preston Music
