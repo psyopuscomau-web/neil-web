@@ -42,14 +42,14 @@ export default function SmokeOverlay() {
         vx: (Math.random() - 0.5) * 0.5,
         vy: -(Math.random() * 0.6 + 0.25),
         r: Math.random() * 40 + 20,
-        alpha: Math.random() * 0.22 + 0.1,
+        alpha: Math.random() * 0.13 + 0.06,
         decay: Math.random() * 0.0006 + 0.0002,
         grow: Math.random() * 0.35 + 0.1,
       })
     }
 
     // Seed densely across the lower two-thirds
-    for (let i = 0; i < 100; i++) spawn(H * 0.4 + Math.random() * H * 0.6)
+    for (let i = 0; i < 60; i++) spawn(H * 0.4 + Math.random() * H * 0.6)
 
     let t = 0
     let id: number
@@ -58,7 +58,7 @@ export default function SmokeOverlay() {
       t++
       ctx.clearRect(0, 0, W, H)
 
-      if (Math.random() < 0.9) spawn()
+      if (Math.random() < 0.6) spawn()
 
       for (let i = particles.length - 1; i >= 0; i--) {
         const p = particles[i]
