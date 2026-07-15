@@ -90,7 +90,7 @@ export default function DaphneApolloPage() {
           </div>
 
           {/* 7. Other albums in red */}
-          <div style={{ borderTop: '1px solid rgba(255,255,255,0.15)', padding: '1.25rem 1.25rem 0.75rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+          <div style={{ borderTop: '1px solid rgba(255,255,255,0.15)', padding: '1.25rem 1.25rem 0.75rem', display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'flex-end', textAlign: 'right' }}>
             <a href="/music/building-backyard-boats" className="font-display font-bold uppercase tracking-widest"
               style={{ color: '#CC1100', fontSize: '0.95rem', cursor: 'pointer', lineHeight: 1.2 }}>
               Building Backyard Boats
@@ -102,7 +102,7 @@ export default function DaphneApolloPage() {
           </div>
 
           {/* 8. Return to home in white */}
-          <div style={{ padding: '0 1.25rem 2.5rem' }}>
+          <div style={{ padding: '0 1.25rem 2.5rem', textAlign: 'right' }}>
             <a href="/" className="font-display font-black uppercase tracking-wide"
               style={{ color: 'white', fontSize: '0.95rem', cursor: 'pointer' }}>
               Neil Preston Music
