@@ -33,7 +33,7 @@ a {
 
 /* ── Music page title: smaller at tablet (640–1279px) to avoid clashing with album links ── */
 .music-page-title {
-  font-size: clamp(3rem, 6.5vw, 5.5rem);
+  font-size: clamp(3rem, 9vw, 7rem);
 }
 
 @media (min-width: 1280px) {
