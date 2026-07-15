@@ -56,7 +56,7 @@ export default function VideoPage() {
 
         {/* Videos: row on desktop, column on phones */}
         <div className="absolute inset-0 flex flex-col items-stretch overflow-y-auto gap-8 sm:flex-row sm:items-center sm:overflow-hidden"
-          style={{ zIndex: 5, paddingTop: '72px', paddingLeft: '4vw', paddingRight: '4vw', paddingBottom: '4vw' }}>
+          style={{ zIndex: 5, paddingTop: '72px', paddingLeft: '4vw', paddingRight: '4vw', paddingBottom: '5rem' }}>
           <VideoPlayer videos={videos} />
         </div>
 

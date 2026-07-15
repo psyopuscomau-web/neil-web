@@ -34,7 +34,9 @@ a {
 /* ── Phone-only overrides (< 640px) ── */
 @media (max-width: 639px) {
   .video-item {
-    width: 100% !important;
+    width: 88% !important;
     flex-shrink: 1 !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
