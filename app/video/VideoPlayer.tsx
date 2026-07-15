@@ -62,7 +62,7 @@ export default function VideoPlayer({ videos }: { videos: Video[] }) {
   return (
     <>
       {videos.map((video) => (
-        <div key={video.id} style={{ width: '28vw', flexShrink: 0 }}>
+        <div key={video.id} className="video-item" style={{ width: '28vw', flexShrink: 0 }}>
           <a href={video.eraHref} className="font-display font-bold uppercase tracking-widest mb-1 block"
             style={{ color: '#CC1100', fontSize: 'clamp(0.6rem, 0.9vw, 0.85rem)', cursor: 'pointer' }}>
             {video.era}

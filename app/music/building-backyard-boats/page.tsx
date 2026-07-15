@@ -29,8 +29,90 @@ export default function BuildingBackyardBoatsPage() {
         <div className="absolute inset-0 bg-black/30 pointer-events-none" />
         <SmokeOverlay />
 
-        {/* 3-panel content overlay */}
-        <div className="absolute inset-0" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '3px', zIndex: 10, paddingTop: '72px' }}>
+        {/* ── PHONE ONLY (< 640px) ── */}
+        <div className="sm:hidden absolute inset-0 flex flex-col overflow-y-auto"
+          style={{ zIndex: 10, paddingTop: '72px' }}>
+
+          {/* 1. Album name */}
+          <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 900, textTransform: 'uppercase', color: 'white', fontSize: '1.6rem', lineHeight: 1.1, letterSpacing: '0.03em', textAlign: 'center', padding: '1.5rem 1.25rem 0.25rem' }}>
+            Building Backyard Boats
+          </h1>
+
+          {/* 2. Year */}
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#CC1100', fontSize: '1.2rem', letterSpacing: '0.25em', textTransform: 'uppercase', textAlign: 'center', marginBottom: '1.25rem' }}>
+            2010
+          </p>
+
+          {/* 3. Album cover */}
+          <div style={{ position: 'relative', width: '60vw', height: '60vw', margin: '0 auto 1.5rem', flexShrink: 0 }}>
+            <Image src="/Building Backyard Boats CD Images/Front Cover - BBB.jpg" alt="Building Backyard Boats cover"
+              fill className="object-cover" style={{ borderRadius: '3px' }} sizes="60vw" />
+          </div>
+
+          {/* 4. Blurb */}
+          <div style={{ padding: '0 1.25rem 1.25rem', color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)', fontSize: '0.9rem', lineHeight: 1.7, fontStyle: 'italic' }}>
+            <p>Armed with more confidence in home recording and some fabulous muso friends I created Building Backyard Boats. Twin brother Terry did another knock out job on producing this one. This album features warm cello runs from Clare Tunney, beautiful backing vocals from Nicollie Hatch and driving bass work by Rob Findlay. I remember Juha Tolonen who I co-wrote Broken on the Sharp recording takes of this song while his young son slept. I think it was done in two or three takes.</p>
+            <p style={{ marginTop: '0.75em' }}>This album is about our dreams that we never fully launch. I remember seeing a half-built boat at the front of a property heading up the Great Northern Highway in Western Australia – in the middle of nowhere; never finished never to feel the salt water.</p>
+            <p style={{ marginTop: '0.75em' }}>"I'm just sailing my love by building backyard boats …"</p>
+          </div>
+
+          {/* 5. Featured Track */}
+          <div style={{ padding: '0 1.25rem 1.25rem' }}>
+            <FeaturedTrack title="Dublin Smile" src="/audio/building-backyard-boats/Dublin Smile.mp3" />
+          </div>
+
+          {/* 6. Listen On */}
+          <div style={{ padding: '0 1.25rem 1.5rem' }}>
+            <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#CC1100', fontSize: '1rem', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
+              Listen On
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.55rem' }}>
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_kunReCql-rVnUAqXmGHlwEtXRTGZL8pqI"
+                target="_blank" rel="noopener noreferrer"
+                className="font-display font-bold uppercase tracking-widest"
+                style={{ color: 'white', fontSize: '0.9rem', textDecoration: 'none' }}>
+                YouTube Music
+              </a>
+              <a href="https://music.apple.com/us/album/building-backyard-boats/1191792104"
+                target="_blank" rel="noopener noreferrer"
+                className="font-display font-bold uppercase tracking-widest"
+                style={{ color: 'white', fontSize: '0.9rem', textDecoration: 'none' }}>
+                Apple Music
+              </a>
+              <a href="https://open.spotify.com/album/743c4xfkBvVPfXYjePF0Zm"
+                target="_blank" rel="noopener noreferrer"
+                className="font-display font-bold uppercase tracking-widest"
+                style={{ color: 'white', fontSize: '0.9rem', textDecoration: 'none' }}>
+                Spotify
+              </a>
+            </div>
+          </div>
+
+          {/* 7. Other albums in red */}
+          <div style={{ borderTop: '1px solid rgba(255,255,255,0.15)', padding: '1.25rem 1.25rem 0.75rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <a href="/music/daphne-apollo" className="font-display font-bold uppercase tracking-widest"
+              style={{ color: '#CC1100', fontSize: '0.95rem', cursor: 'pointer', lineHeight: 1.2 }}>
+              Daphne and Apollo
+            </a>
+            <a href="/music/two-faces" className="font-display font-bold uppercase tracking-widest"
+              style={{ color: '#CC1100', fontSize: '0.95rem', cursor: 'pointer', lineHeight: 1.2 }}>
+              Two Faces of Adam and Eve
+            </a>
+          </div>
+
+          {/* 8. Return to home in white */}
+          <div style={{ padding: '0 1.25rem 2.5rem' }}>
+            <a href="/" className="font-display font-black uppercase tracking-wide"
+              style={{ color: 'white', fontSize: '0.95rem', cursor: 'pointer' }}>
+              Neil Preston Music
+            </a>
+          </div>
+
+        </div>
+
+        {/* ── DESKTOP / TABLET (≥ 640px): original 3-panel layout ── */}
+        <div className="hidden sm:grid absolute inset-0"
+          style={{ gridTemplateColumns: 'repeat(3, 1fr)', gap: '3px', zIndex: 10, paddingTop: '72px' }}>
 
           {/* Panel 1 — title, cover, CD disc */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1.5vw', padding: '2vw' }}>
@@ -84,7 +166,7 @@ export default function BuildingBackyardBoatsPage() {
           {/* Panel 3 — blurb */}
           <div style={{ padding: '2vw', paddingBottom: '10%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic' }}>
-              Armed with more confidence in home recording and some fabulous muso friends I created Building Backyard Boats. Twin brother Terry did another knock out job on producing this one. This album features cello from Clare Tunney, beautiful backing vocals from Nicollie Hatch and driving bass work by Rob Findlay. I remember Juha Tolonen who I co-wrote Broken on the Sharp recording takes of this song while his young son slept. I think it was done in two or three takes.
+              Armed with more confidence in home recording and some fabulous muso friends I created Building Backyard Boats. Twin brother Terry did another knock out job on producing this one. This album features warm cello runs from Clare Tunney, beautiful backing vocals from Nicollie Hatch and driving bass work by Rob Findlay. I remember Juha Tolonen who I co-wrote Broken on the Sharp recording takes of this song while his young son slept. I think it was done in two or three takes.
             </p>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '1em' }}>
               This album is about our dreams that we never fully launch. I remember seeing a half-built boat at the front of a property heading up the Great Northern Highway in Western Australia – in the middle of nowhere; never finished never to feel the salt water.
@@ -96,7 +178,10 @@ export default function BuildingBackyardBoatsPage() {
 
         </div>
 
-        <EraNav current="/music/building-backyard-boats" />
+        {/* Era nav — desktop/tablet only */}
+        <div className="hidden sm:block">
+          <EraNav current="/music/building-backyard-boats" />
+        </div>
       </section>
     </main>
   )

@@ -33,11 +33,36 @@ export default function MusicPage() {
         </div>
         <div className="absolute inset-0 bg-black/30 pointer-events-none" />
         <SmokeOverlay />
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+
+        {/* ── PHONE ONLY (< 640px): title above, album links below ── */}
+        <div className="sm:hidden absolute inset-0 flex flex-col items-center justify-center"
+          style={{ zIndex: 10, paddingTop: '72px' }}>
+          <h1 className="font-display font-black uppercase text-white leading-none text-center"
+            style={{ fontSize: 'clamp(3rem, 13vw, 4.5rem)', marginBottom: '2rem' }}>
+            Neil Preston
+          </h1>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.1rem' }}>
+            <a href="/music/daphne-apollo" className="font-display font-bold uppercase tracking-widest"
+              style={{ color: '#CC1100', cursor: 'pointer', fontSize: '1.05rem', letterSpacing: '0.05em', lineHeight: 1.2 }}>
+              Daphne and Apollo
+            </a>
+            <a href="/music/building-backyard-boats" className="font-display font-bold uppercase tracking-widest"
+              style={{ color: '#CC1100', cursor: 'pointer', fontSize: '1.05rem', letterSpacing: '0.05em', lineHeight: 1.2 }}>
+              Building Backyard Boats
+            </a>
+            <a href="/music/two-faces" className="font-display font-bold uppercase tracking-widest"
+              style={{ color: '#CC1100', cursor: 'pointer', fontSize: '1.05rem', letterSpacing: '0.05em', lineHeight: 1.2 }}>
+              Two Faces of Adam and Eve
+            </a>
+          </div>
+        </div>
+
+        {/* ── DESKTOP / TABLET (≥ 640px): original layout ── */}
+        <div className="hidden sm:flex absolute inset-0 items-center justify-center pointer-events-none">
           <h1 className="font-display font-black uppercase text-white leading-none text-center"
             style={{ fontSize: 'clamp(4rem, 13vw, 14rem)' }}>Neil Preston</h1>
         </div>
-        <div className="absolute flex flex-col justify-center gap-8"
+        <div className="hidden sm:flex absolute flex-col justify-center gap-8"
           style={{ right: '3%', top: '52%', transform: 'translateY(-50%)', zIndex: 10, textAlign: 'right' }}>
           <a href="/music/daphne-apollo" style={{ color: '#CC1100', cursor: 'pointer', fontSize: 'clamp(1rem, 1.8vw, 1.5rem)', fontFamily: 'var(--font-display)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', lineHeight: 1.2 }}>Daphne and Apollo</a>
           <a href="/music/building-backyard-boats" style={{ color: '#CC1100', cursor: 'pointer', fontSize: 'clamp(1rem, 1.8vw, 1.5rem)', fontFamily: 'var(--font-display)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', lineHeight: 1.2 }}>Building Backyard Boats</a>
