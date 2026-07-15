@@ -164,7 +164,7 @@ export default function TwoFacesPage() {
           </div>
 
           {/* Panel 3 — blurb */}
-          <div style={{ padding: '2vw', paddingBottom: '10%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <div className="era-blurb-panel" style={{ padding: '2vw', paddingBottom: '10%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic' }}>
               This album goes back to my power pop roots a little (see www.amonthofsunday.com.au) I wanted a band vibe to this recording so I got Terry and great mates Mark Ralph on keys and Abe Dunovits on bass. These Fremantle lads now how to make songs swing, they gave me the pop and white soul r&b vibe I was looking for on this album, not to mention Terry Preston on drums – man can he hit those things.
             </p>

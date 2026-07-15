@@ -164,7 +164,7 @@ export default function BuildingBackyardBoatsPage() {
           </div>
 
           {/* Panel 3 — blurb */}
-          <div style={{ padding: '2vw', paddingBottom: '10%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <div className="era-blurb-panel" style={{ padding: '2vw', paddingBottom: '10%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic' }}>
               Armed with more confidence in home recording and some fabulous muso friends I created Building Backyard Boats. Twin brother Terry did another knock out job on producing this one. This album features warm cello runs from Clare Tunney, beautiful backing vocals from Nicollie Hatch and driving bass work by Rob Findlay. I remember Juha Tolonen who I co-wrote Broken on the Sharp recording takes of this song while his young son slept. I think it was done in two or three takes.
             </p>

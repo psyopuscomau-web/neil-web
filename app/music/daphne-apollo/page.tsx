@@ -165,7 +165,7 @@ export default function DaphneApolloPage() {
           </div>
 
           {/* Panel 3 — blurb */}
-          <div style={{ padding: '2vw', paddingBottom: '10%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <div className="era-blurb-panel" style={{ padding: '2vw', paddingBottom: '10%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic' }}>
               After years of loud rock and roll in every conceivable alternative pub venue in Perth and my ears ringing with tinnitus from the fun of it all, I retreated in the winter of 2005 to make a purely solo acoustic album. The album was so quiet that I chose not to use a guitar pick in most of the recordings and if you listen really closely you can hear the sounds of cars as I attempted my first home recording.
             </p>

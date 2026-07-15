@@ -8,7 +8,7 @@ export default function EraNav({ current }: { current: string }) {
   const others = allEras.filter((e) => e.href !== current)
   return (
     <div
-      className="absolute bottom-0 right-0 flex flex-col items-end gap-3"
+      className="era-nav absolute bottom-0 right-0 flex flex-col items-end gap-3"
       style={{ padding: '0 3% 2.5% 0', zIndex: 10 }}
     >
       {others.map((era) => (
