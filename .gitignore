@@ -50,12 +50,15 @@ public/Two Faces of Adam and Eve/
 *.wav
 # Untracked originals in CD image folders
 public/Building Backyard Boats CD Images/CD*
+!public/Building Backyard Boats CD Images/CD - BBB.jpg
 public/Building Backyard Boats CD Images/Inside*
 public/Building Backyard Boats CD Images/Page*
 public/Daphne and Apollo CD Images/Daphne*
+!public/Daphne and Apollo CD Images/Daphne and Apollo CD 2 002.jpg
 public/Daphne and Apollo CD Images/Inside*
 public/Daphne and Apollo CD Images/Lyrics*
 public/Two Faces of Adam and Eve CD Images/CD*
+!public/Two Faces of Adam and Eve CD Images/CD -TFAE.jpg
 public/Two Faces of Adam and Eve CD Images/Lyric*
 # Untracked originals in Neil Preston Images era folders
 public/Neil Preston Images/Daphne Apollo Era/Monday Psalter 2.JPG
