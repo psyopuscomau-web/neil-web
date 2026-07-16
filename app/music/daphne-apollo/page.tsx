@@ -51,10 +51,9 @@ export default function DaphneApolloPage() {
 
           {/* 4. Blurb */}
           <div style={{ padding: '0 1.25rem 1.25rem', color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)', fontSize: '0.9rem', lineHeight: 1.7, fontStyle: 'italic' }}>
-            <p>After years of loud rock and roll in every conceivable alternative pub venue in Perth and my ears ringing with tinnitus from the fun of it all, I retreated in the winter of 2005 to make a purely solo acoustic album. The album was so quiet that I chose not to use a guitar pick in most of the recordings and if you listen really closely you can hear the sounds of cars as I attempted my first home recording.</p>
-            <p style={{ marginTop: '0.75em' }}>I was obsessed with the myth of Daphne and Apollo. The classical story of the pursued and the pursuer and the warning that comes from not embracing the love on offer.</p>
-            <p style={{ marginTop: '0.75em' }}>Close intimate vocals, warm acoustic guitars and steel sounding dobro's – it captured a time and space; just how all good albums should.</p>
-            <p style={{ marginTop: '0.75em' }}>"This tale is true an ancient tale - as it is today of how love prevails ..."</p>
+            <p>After years of loud rock and roll, ears ringing with tinnitus, I retreated in 2005 to make a purely solo acoustic album – so quiet I chose not to use a guitar pick.</p>
+            <p style={{ marginTop: '0.75em' }}>I was obsessed with the myth of Daphne and Apollo – the pursued and the pursuer, and the warning that comes from not embracing the love on offer. Close intimate vocals, warm acoustic guitars and steel sounding dobros.</p>
+            <p style={{ marginTop: '1.5em' }}>"This tale is true an ancient tale - as it is today of how love prevails ..."</p>
           </div>
 
           {/* 5. Featured Track */}
@@ -167,15 +166,12 @@ export default function DaphneApolloPage() {
           {/* Panel 3 — blurb */}
           <div className="era-blurb-panel" style={{ padding: '2vw', paddingBottom: '10%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic' }}>
-              After years of loud rock and roll in every conceivable alternative pub venue in Perth and my ears ringing with tinnitus from the fun of it all, I retreated in the winter of 2005 to make a purely solo acoustic album. The album was so quiet that I chose not to use a guitar pick in most of the recordings and if you listen really closely you can hear the sounds of cars as I attempted my first home recording.
+              After years of loud rock and roll, ears ringing with tinnitus, I retreated in 2005 to make a purely solo acoustic album – so quiet I chose not to use a guitar pick.
             </p>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '1em' }}>
-              I was obsessed with the myth of Daphne and Apollo. The classical story of the pursued and the pursuer and the warning that comes from not embracing the love on offer.
+              I was obsessed with the myth of Daphne and Apollo – the pursued and the pursuer, and the warning that comes from not embracing the love on offer. Close intimate vocals, warm acoustic guitars and steel sounding dobros.
             </p>
-            <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '1em' }}>
-              Close intimate vocals, warm acoustic guitars and steel sounding dobro's – it captured a time and space; just how all good albums should.
-            </p>
-            <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '1em' }}>
+            <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '2em' }}>
               "This tale is true an ancient tale - as it is today of how love prevails ..."
             </p>
           </div>

@@ -51,9 +51,9 @@ export default function TwoFacesPage() {
 
           {/* 4. Blurb */}
           <div style={{ padding: '0 1.25rem 1.25rem', color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)', fontSize: '0.9rem', lineHeight: 1.7, fontStyle: 'italic' }}>
-            <p>This album goes back to my power pop roots a little (see www.amonthofsunday.com.au) I wanted a band vibe to this recording so I got Terry and great mates Mark Ralph on keys and Abe Dunovits on bass. These Fremantle lads now how to make songs swing, they gave me the pop and white soul r&amp;b vibe I was looking for on this album, not to mention Terry Preston on drums – man can he hit those things.</p>
-            <p style={{ marginTop: '0.75em' }}>Most of the bed tracks for this album were recorded in a rammed earth house somewhere near Margaret River. Terry and I asked for a place in the middle of nowhere so we can enjoy the peace and quiet and not be disturbed by anyone. The truth was over a long weekend we made one hell of a racket with full throated performances by the boys. The bed tracks went down together, guitars, keys, bass and drums – often in one or two takes – no nonsense old school approach to capturing a band capturing a moment. Some other tracks were recorded later with just Terry and I. Go to <a href="/video" style={{ color: '#CC1100', textDecoration: 'none', fontStyle: 'italic' }}>Video</a> to watch us build the song Favourite Game – one of my favourite tracks on the album.</p>
-            <p style={{ marginTop: '0.75em' }}>"Tread where angels fear to go – a foolish soul …"</p>
+            <p>This album goes back to my power pop roots. I got my brother Terry and great mates Mark Ralph on keys and Abe Dunovits on bass – these Fremantle lads know how to make songs swing, giving me the pop and white soul R&amp;B vibe I was after.</p>
+            <p style={{ marginTop: '0.75em' }}>Most tracks were recorded in a rammed earth house near Margaret River – guitars, keys, bass and drums, often in one or two takes. Old school and no nonsense. Other songs were recorded entirely at home. Go to <a href="/video" style={{ color: '#CC1100', textDecoration: 'none', fontStyle: 'italic' }}>Video</a> to watch us build Favourite Game.</p>
+            <p style={{ marginTop: '1.5em' }}>"Tread where angels fear to go – a foolish soul …"</p>
           </div>
 
           {/* 5. Featured Track */}
@@ -166,12 +166,12 @@ export default function TwoFacesPage() {
           {/* Panel 3 — blurb */}
           <div className="era-blurb-panel" style={{ padding: '2vw', paddingBottom: '10%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic' }}>
-              This album goes back to my power pop roots a little (see www.amonthofsunday.com.au) I wanted a band vibe to this recording so I got Terry and great mates Mark Ralph on keys and Abe Dunovits on bass. These Fremantle lads now how to make songs swing, they gave me the pop and white soul r&b vibe I was looking for on this album, not to mention Terry Preston on drums – man can he hit those things.
+              This album goes back to my power pop roots. I got my brother Terry and great mates Mark Ralph on keys and Abe Dunovits on bass – these Fremantle lads know how to make songs swing, giving me the pop and white soul R&B vibe I was after.
             </p>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '1em' }}>
-              Most of the bed tracks for this album were recorded in a rammed earth house somewhere near Margaret River. Terry and I asked for a place in the middle of nowhere so we can enjoy the peace and quiet and not be disturbed by anyone. The truth was over a long weekend we made one hell of racket with full throated performances by the boys. The bed tracks went down together, guitars, keys, bass and drums – often in one or two takes – no nonsense old school approach to capturing a band capturing a moment. Some other tracks were recorded later with just Terry and I. Go to <a href="/video" style={{ color: '#CC1100', textDecoration: 'none', fontStyle: 'italic' }} className="hover:underline">Video</a> to watch us build the song Favourite Game – one of my favourite tracks on the album.
+              Most tracks were recorded in a rammed earth house near Margaret River – guitars, keys, bass and drums, often in one or two takes. Old school and no nonsense. Other songs were recorded entirely at home. Go to <a href="/video" style={{ color: '#CC1100', textDecoration: 'none', fontStyle: 'italic' }} className="hover:underline">Video</a> to watch us build Favourite Game.
             </p>
-            <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '1em' }}>
+            <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '2em' }}>
               "Tread where angels fear to go – a foolish soul …"
             </p>
           </div>

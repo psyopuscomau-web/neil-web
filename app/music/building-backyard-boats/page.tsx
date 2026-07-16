@@ -51,9 +51,9 @@ export default function BuildingBackyardBoatsPage() {
 
           {/* 4. Blurb */}
           <div style={{ padding: '0 1.25rem 1.25rem', color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)', fontSize: '0.9rem', lineHeight: 1.7, fontStyle: 'italic' }}>
-            <p>Armed with more confidence in home recording and some fabulous muso friends I created Building Backyard Boats. Twin brother Terry did another knock out job on producing this one. This album features warm cello runs from Clare Tunney, beautiful backing vocals from Nicollie Hatch and driving bass work by Rob Findlay. I remember Juha Tolonen who I co-wrote Broken on the Sharp recording takes of this song while his young son slept. I think it was done in two or three takes.</p>
-            <p style={{ marginTop: '0.75em' }}>This album is about our dreams that we never fully launch. I remember seeing a half-built boat at the front of a property heading up the Great Northern Highway in Western Australia – in the middle of nowhere; never finished never to feel the salt water.</p>
-            <p style={{ marginTop: '0.75em' }}>"I'm just sailing my love by building backyard boats …"</p>
+            <p>Armed with more confidence in home recording and some fabulous muso friends I created Building Backyard Boats. This album features stylish keys by Juha Tolenen, warm cello runs from Clare Tunney; beautiful backing vocals from Nicollie Hatch and driving bass work by Rob Findlay.</p>
+            <p style={{ marginTop: '0.75em' }}>This album is about our dreams that we never fully launch. I remember seeing a half-built boat at a property while driving up the Great Northern Highway in Western Australia – in the middle of nowhere; never finished never to feel the salt water.</p>
+            <p style={{ marginTop: '1.5em' }}>"I'm just sailing my love by building backyard boats …"</p>
           </div>
 
           {/* 5. Featured Track */}
@@ -166,12 +166,12 @@ export default function BuildingBackyardBoatsPage() {
           {/* Panel 3 — blurb */}
           <div className="era-blurb-panel" style={{ padding: '2vw', paddingBottom: '10%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic' }}>
-              Armed with more confidence in home recording and some fabulous muso friends I created Building Backyard Boats. Twin brother Terry did another knock out job on producing this one. This album features warm cello runs from Clare Tunney, beautiful backing vocals from Nicollie Hatch and driving bass work by Rob Findlay. I remember Juha Tolonen who I co-wrote Broken on the Sharp recording takes of this song while his young son slept. I think it was done in two or three takes.
+              Armed with more confidence in home recording and some fabulous muso friends I created Building Backyard Boats. This album features stylish keys by Juha Tolenen, warm cello runs from Clare Tunney; beautiful backing vocals from Nicollie Hatch and driving bass work by Rob Findlay.
             </p>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '1em' }}>
-              This album is about our dreams that we never fully launch. I remember seeing a half-built boat at the front of a property heading up the Great Northern Highway in Western Australia – in the middle of nowhere; never finished never to feel the salt water.
+              This album is about our dreams that we never fully launch. I remember seeing a half-built boat at a property while driving up the Great Northern Highway in Western Australia – in the middle of nowhere; never finished never to feel the salt water.
             </p>
-            <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '1em' }}>
+            <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(0.7rem, 0.95vw, 0.95rem)', lineHeight: 1.75, fontStyle: 'italic', marginTop: '2em' }}>
               "I'm just sailing my love by building backyard boats …"
             </p>
           </div>
