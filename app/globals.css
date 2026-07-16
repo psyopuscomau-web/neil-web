@@ -67,6 +67,16 @@ a {
   }
 }
 
+/* ── Spinning CD animation ── */
+@keyframes spin-cd {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.cd-spin {
+  animation: spin-cd 6s linear infinite;
+}
+
 /* ── Phone-only overrides (< 640px) ── */
 @media (max-width: 639px) {
   .video-item {
