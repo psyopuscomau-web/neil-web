@@ -1,17 +1,6 @@
 import Image from 'next/image'
 import SmokeOverlay from '../SmokeOverlay'
 
-const cdSpinStyle = `
-  @keyframes spin-cd {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-  .cd-spin-inner {
-    position: absolute;
-    inset: 0;
-    animation: spin-cd 5s linear infinite;
-  }
-`
 
 const albums = [
   {
@@ -58,7 +47,6 @@ const albums = [
 export default function ShopPage() {
   return (
     <main className="bg-black">
-      <style dangerouslySetInnerHTML={{ __html: cdSpinStyle }} />
       <section className="relative overflow-hidden" style={{ height: '100svh' }}>
 
         {/* ── Background: 3×2 photo grid, one era per column ── */}
@@ -98,7 +86,7 @@ export default function ShopPage() {
                 <Image src={album.cover} alt={`${album.title} cover`} fill className="object-cover" style={{ borderRadius: '3px' }} sizes="55vw" />
               </div>
               <div style={{ position: 'relative', width: '45vw', height: '45vw', borderRadius: '50%', overflow: 'hidden', flexShrink: 0, marginBottom: '1rem' }}>
-                <div className="cd-spin-inner">
+                <div style={{ position: 'absolute', inset: 0, animation: 'spin-cd 5s linear infinite' }}>
                   <Image src={album.cd} alt={`${album.title} CD`} fill className="object-cover" sizes="45vw" />
                 </div>
               </div>
@@ -133,7 +121,7 @@ export default function ShopPage() {
                 <Image src={album.cover} alt={`${album.title} cover`} fill className="object-cover" style={{ borderRadius: '3px' }} sizes="228px" />
               </div>
               <div style={{ position: 'relative', width: 'clamp(108px, 14vw, 198px)', height: 'clamp(108px, 14vw, 198px)', borderRadius: '50%', overflow: 'hidden', flexShrink: 0 }}>
-                <div className="cd-spin-inner">
+                <div style={{ position: 'absolute', inset: 0, animation: 'spin-cd 5s linear infinite' }}>
                   <Image src={album.cd} alt={`${album.title} CD`} fill className="object-cover" sizes="198px" />
                 </div>
               </div>
