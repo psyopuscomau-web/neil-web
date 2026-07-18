@@ -14,7 +14,7 @@ const albums = [
       { src: '/Neil Preston Images/Daphne Apollo Era/Beer Shot.JPG', pos: 'top' },
     ],
     bgFilter: 'brightness(0.35) sepia(1) saturate(1.5) hue-rotate(-10deg) blur(1.5px)',
-    href: '#',
+    href: 'https://neilpreston.bandcamp.com/album/daphne-and-apollo',
   },
   {
     title: 'Building Backyard Boats',
@@ -27,7 +27,7 @@ const albums = [
       { src: '/Neil Preston Images/Building Backyard Boats Era/20080731_APL0069.jpg', pos: 'top' },
     ],
     bgFilter: 'brightness(0.45) sepia(1) saturate(2.5) hue-rotate(220deg) blur(1.5px)',
-    href: '#',
+    href: 'https://neilpreston.bandcamp.com/album/building-backyard-boats',
   },
   {
     title: 'Two Faces of Adam and Eve',
@@ -40,7 +40,7 @@ const albums = [
       { src: '/Neil Preston Images/Two Faces of Adam and Eve Era/Neil Strat.jpg', pos: 'top' },
     ],
     bgFilter: 'brightness(0.4) sepia(1) saturate(2.5) hue-rotate(185deg) blur(1.5px)',
-    href: '#',
+    href: 'https://neilpreston.bandcamp.com/album/two-faces-of-adam-and-eve',
   },
 ]
 
@@ -90,7 +90,7 @@ export default function ShopPage() {
                   <Image src={album.cd} alt={`${album.title} CD`} fill className="object-cover" sizes="45vw" />
                 </div>
               </div>
-              <a href={album.href} className="font-display font-bold uppercase tracking-widest hover:text-white transition-colors"
+              <a href={album.href} target="_blank" rel="noopener noreferrer" className="font-display font-bold uppercase tracking-widest hover:text-white transition-colors"
                 style={{ color: '#CC1100', fontSize: '0.9rem', textDecoration: 'none' }}>
                 Buy the real thing here
               </a>
@@ -125,7 +125,7 @@ export default function ShopPage() {
                   <Image src={album.cd} alt={`${album.title} CD`} fill className="object-cover" sizes="198px" />
                 </div>
               </div>
-              <a href={album.href} className="font-display font-bold uppercase tracking-widest hover:text-white transition-colors"
+              <a href={album.href} target="_blank" rel="noopener noreferrer" className="font-display font-bold uppercase tracking-widest hover:text-white transition-colors"
                 style={{ color: '#CC1100', fontSize: 'clamp(0.7rem, 1vw, 1rem)', textDecoration: 'none' }}>
                 Buy the real thing here
               </a>
