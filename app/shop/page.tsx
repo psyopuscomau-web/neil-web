@@ -85,11 +85,17 @@ export default function ShopPage() {
               <div style={{ position: 'relative', width: '55vw', height: '55vw', flexShrink: 0, marginBottom: '1rem' }}>
                 <Image src={album.cover} alt={`${album.title} cover`} fill className="object-cover" style={{ borderRadius: '3px' }} sizes="55vw" />
               </div>
-              <div style={{ position: 'relative', width: '45vw', height: '45vw', borderRadius: '50%', overflow: 'hidden', flexShrink: 0, marginBottom: '1rem' }}>
+              <a href={album.href} target="_blank" rel="noopener noreferrer" className="group"
+                style={{ position: 'relative', width: '45vw', height: '45vw', borderRadius: '50%', overflow: 'hidden', flexShrink: 0, marginBottom: '1rem', display: 'block' }}>
                 <div style={{ position: 'absolute', inset: 0, animation: 'spin-cd 5s linear infinite' }}>
                   <Image src={album.cd} alt={`${album.title} CD`} fill className="object-cover" sizes="45vw" />
                 </div>
-              </div>
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.08em', textAlign: 'center', padding: '0 1rem', lineHeight: 1.4 }}>
+                    Purchase Limited Edition CD Here
+                  </span>
+                </div>
+              </a>
               <a href={album.href} target="_blank" rel="noopener noreferrer" className="font-display font-bold uppercase tracking-widest hover:text-white transition-colors"
                 style={{ color: '#CC1100', fontSize: '0.9rem', textDecoration: 'none' }}>
                 Buy the real thing here
@@ -120,11 +126,17 @@ export default function ShopPage() {
               <div style={{ position: 'relative', width: 'clamp(120px, 17vw, 228px)', height: 'clamp(120px, 17vw, 228px)', flexShrink: 0 }}>
                 <Image src={album.cover} alt={`${album.title} cover`} fill className="object-cover" style={{ borderRadius: '3px' }} sizes="228px" />
               </div>
-              <div style={{ position: 'relative', width: 'clamp(108px, 14vw, 198px)', height: 'clamp(108px, 14vw, 198px)', borderRadius: '50%', overflow: 'hidden', flexShrink: 0 }}>
+              <a href={album.href} target="_blank" rel="noopener noreferrer" className="group"
+                style={{ position: 'relative', width: 'clamp(108px, 14vw, 198px)', height: 'clamp(108px, 14vw, 198px)', borderRadius: '50%', overflow: 'hidden', flexShrink: 0, display: 'block' }}>
                 <div style={{ position: 'absolute', inset: 0, animation: 'spin-cd 5s linear infinite' }}>
                   <Image src={album.cd} alt={`${album.title} CD`} fill className="object-cover" sizes="198px" />
                 </div>
-              </div>
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(0.5rem, 0.65vw, 0.65rem)', textTransform: 'uppercase', letterSpacing: '0.08em', textAlign: 'center', padding: '0 0.75rem', lineHeight: 1.4 }}>
+                    Purchase Limited Edition CD Here
+                  </span>
+                </div>
+              </a>
               <a href={album.href} target="_blank" rel="noopener noreferrer" className="font-display font-bold uppercase tracking-widest hover:text-white transition-colors"
                 style={{ color: '#CC1100', fontSize: 'clamp(0.7rem, 1vw, 1rem)', textDecoration: 'none' }}>
                 Buy the real thing here
